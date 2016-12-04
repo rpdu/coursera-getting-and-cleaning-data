@@ -1,10 +1,10 @@
 # load useful libraries
 library(dplyr)
 
-# verify if UCI HAR Dataset.zip exists in ./data directory, if not download file.  
+# verify if UCI HAR Dataset.zip exists in default working directory, if not download file.  
 if(!file.exists("./UCI HAR Dataset.zip")){
         fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-        download.file(fileUrl, destfile="./data/UCI HAR Dataset.zip")
+        download.file(fileUrl, destfile="./UCI HAR Dataset.zip")
 }
 # extract file if "/data/UCI HAR Dataset" directory is not present
 if(!file.exists("./UCI HAR Dataset")){
